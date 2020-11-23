@@ -1,5 +1,47 @@
-h1 {
-  color: green;
+/*
+$backgrnd-color: ;
+$h-color: ;
+$p-color: ;
+$pic-text-color: ;
+*/
+/*
+$h-font-family: ;
+$h-font-size: ;
+$p-font-family: ;
+$p-font-size: ;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.container .top-pic {
+  height: 100%;
+  background-image: url(../images/water-and-houses.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .bottom-pic {
+  height: 100%;
+  background-image: url(../images/horses.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
