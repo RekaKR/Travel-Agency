@@ -1,0 +1,5 @@
+@use "color.scss";
+
+h1 {
+  color: color.$font-color;
+}
