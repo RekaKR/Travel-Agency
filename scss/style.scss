@@ -32,6 +32,14 @@ body {
     line-height: modules.$p-line-height;
     letter-spacing: -0.35px;
   }
+  
+  .pic-container {
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+  }
 
   .pic-text,
   .pic-text {

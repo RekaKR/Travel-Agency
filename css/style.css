@@ -94,6 +94,13 @@ body {
   line-height: 35.2px;
   letter-spacing: -0.35px;
 }
+.main-container .pic-container {
+  width: 100%;
+  height: auto;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
 .main-container .pic-text,
 .main-container .pic-text {
   width: 100%;
