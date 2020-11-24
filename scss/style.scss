@@ -16,31 +16,56 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  h1 {
+  h1,
+  h3 {
     color: modules.$h-color;
     font-family: modules.$h-font-family;
     font-weight: modules.$h1-font-weight;
     font-size: modules.$h1-font-size;
   }
 
-  h3 {
-    color: modules.$h-color;
-    font-family: modules.$h-font-family;
-    font-weight: modules.$h3-font-weight;
-    font-size: modules.$h1-font-size;
+  .overwhelming-q,
+  .bts-answer,
+  .p-cont,
+   {
+    width: 700px;
+    margin: 0 auto 0;
+
+    h1 {
+      width: 350px;
+    }
   }
 
   p {
     color: modules.$p-color;
+    padding-bottom: 60px;
     font-family: modules.$p-font-family;
     font-weight: modules.$p-font-weight;
     font-size: modules.$p-font-size;
+    line-height: modules.$p-line-height;
   }
 
   .top-pic-text,
   .bottom-pic-text {
+    width: 100%;
     color: modules.$pic-text-color;
+    margin: none;
+    padding: none;
     font-size: modules.$pic-text-font-size;
+  }
+
+  .sixth {
+    width: 730px;
+    margin: 0 auto 0;
+
+    h3 {
+      width: 770px;
+      font-size: modules.$h3-font-size;
+  
+      span {
+        font-weight: modules.$span-font-weight;
+      }
+    }
   }
 }
 

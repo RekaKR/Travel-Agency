@@ -1,33 +1,9 @@
 /*
 $h1-line-height: 54.2082pt;
 $h1-letter-space: -40;
-$p-line-height: 35.2pt;
+
 $pic-text-line-height: 35.2pt;
 */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-}
-.container .top-pic {
-  height: 100%;
-  background-image: url(../images/water-and-houses.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.container .bottom-pic {
-  height: 100%;
-  background-image: url(../images/horses.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -43,28 +19,50 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.main-container h1 {
+.main-container h1,
+.main-container h3 {
   color: #f96400;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
 }
-.main-container h3 {
-  color: #f96400;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
+.main-container .overwhelming-q,
+.main-container .bts-answer,
+.main-container .p-cont {
+  width: 700px;
+  margin: 0 auto 0;
+}
+.main-container .overwhelming-q h1,
+.main-container .bts-answer h1,
+.main-container .p-cont h1 {
+  width: 350px;
 }
 .main-container p {
   color: white;
+  padding-bottom: 60px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  line-height: 35px;
 }
 .main-container .top-pic-text,
 .main-container .bottom-pic-text {
+  width: 100%;
   color: #909090;
+  margin: none;
+  padding: none;
   font-size: 16px;
+}
+.main-container .sixth {
+  width: 730px;
+  margin: 0 auto 0;
+}
+.main-container .sixth h3 {
+  width: 770px;
+  font-size: 24px;
+}
+.main-container .sixth h3 span {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
