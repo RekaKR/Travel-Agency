@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: modules.$background-color;
+  background-color: black;
 }
 
 .main-container {
@@ -15,6 +15,7 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  background-color: modules.$background-color;
 
   h1,
   h3 {
@@ -26,27 +27,40 @@ body {
 
   p {
     color: modules.$p-color;
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     font-family: modules.$p-font-family;
     font-weight: modules.$p-font-weight;
     font-size: modules.$p-font-size;
     line-height: modules.$p-line-height;
+    letter-spacing: -0.35px;
   }
 
   .overwhelming-q,
-  .bts-answer,
-  .p-cont {
-    width: 740px;
+  .bts-answer {
+    width: 700px;
     margin: 0 auto 0;
 
     h1 {
       width: 350px;
-      margin-bottom: 35px;
+      margin: 37px 0 35px -5px;
+      letter-spacing: modules.$h1-letter-space;
     }
 
     p {
-      margin-left: 8px;
+      margin-left: 1.7px;
+      span {
+        margin-left: 1.3px;
+        display: inline-block;
+      }
     }
+
+    .bigger-p {
+      padding-bottom: 70px;
+    }
+  }
+  
+  .fourth { 
+    margin-bottom: 100px;
   }
 
   .top-pic-text,
@@ -59,10 +73,9 @@ body {
   }
 
   .fifth {
+    margin: 0 84px 0 9px;
 
     img {
-      position: relative;
-      right: 43px;
       width: 100%;
     }
   }

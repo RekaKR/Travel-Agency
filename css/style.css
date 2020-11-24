@@ -1,6 +1,5 @@
 /*
 $h1-line-height: 54.2082pt;
-$h1-letter-space: -40;
 
 $pic-text-line-height: 35.2pt;
 */
@@ -10,7 +9,7 @@ $pic-text-line-height: 35.2pt;
 }
 
 body {
-  background-color: #2f3e49;
+  background-color: black;
 }
 
 .main-container {
@@ -18,6 +17,7 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #2f3e49;
 }
 .main-container h1,
 .main-container h3 {
@@ -28,28 +28,39 @@ body {
 }
 .main-container p {
   color: white;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 35.2px;
+  letter-spacing: -0.35px;
 }
 .main-container .overwhelming-q,
-.main-container .bts-answer,
-.main-container .p-cont {
-  width: 740px;
+.main-container .bts-answer {
+  width: 700px;
   margin: 0 auto 0;
 }
 .main-container .overwhelming-q h1,
-.main-container .bts-answer h1,
-.main-container .p-cont h1 {
+.main-container .bts-answer h1 {
   width: 350px;
-  margin-bottom: 35px;
+  margin: 37px 0 35px -5px;
+  letter-spacing: -2px;
 }
 .main-container .overwhelming-q p,
-.main-container .bts-answer p,
-.main-container .p-cont p {
-  margin-left: 8px;
+.main-container .bts-answer p {
+  margin-left: 1.7px;
+}
+.main-container .overwhelming-q p span,
+.main-container .bts-answer p span {
+  margin-left: 1.3px;
+  display: inline-block;
+}
+.main-container .overwhelming-q .bigger-p,
+.main-container .bts-answer .bigger-p {
+  padding-bottom: 70px;
+}
+.main-container .fourth {
+  margin-bottom: 100px;
 }
 .main-container .top-pic-text,
 .main-container .bottom-pic-text {
@@ -59,9 +70,10 @@ body {
   padding: none;
   font-size: 16px;
 }
+.main-container .fifth {
+  margin: 0 84px 0 9px;
+}
 .main-container .fifth img {
-  position: relative;
-  right: 43px;
   width: 100%;
 }
 .main-container .sixth {
