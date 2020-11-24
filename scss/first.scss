@@ -1,0 +1,20 @@
+.hamburger {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+
+  &_item {
+    background: #222;
+    display: block;
+    height: 2px;
+    width: 1.5rem;
+    display: block;
+  
+}
+
+}
