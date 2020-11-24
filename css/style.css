@@ -26,17 +26,6 @@ body {
   font-weight: 900;
   font-size: 48px;
 }
-.main-container .overwhelming-q,
-.main-container .bts-answer,
-.main-container .p-cont {
-  width: 700px;
-  margin: 0 auto 0;
-}
-.main-container .overwhelming-q h1,
-.main-container .bts-answer h1,
-.main-container .p-cont h1 {
-  width: 350px;
-}
 .main-container p {
   color: white;
   padding-bottom: 60px;
@@ -44,6 +33,23 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 35px;
+}
+.main-container .overwhelming-q,
+.main-container .bts-answer,
+.main-container .p-cont {
+  width: 740px;
+  margin: 0 auto 0;
+}
+.main-container .overwhelming-q h1,
+.main-container .bts-answer h1,
+.main-container .p-cont h1 {
+  width: 350px;
+  margin-bottom: 35px;
+}
+.main-container .overwhelming-q p,
+.main-container .bts-answer p,
+.main-container .p-cont p {
+  margin-left: 8px;
 }
 .main-container .top-pic-text,
 .main-container .bottom-pic-text {
@@ -53,12 +59,18 @@ body {
   padding: none;
   font-size: 16px;
 }
+.main-container .fifth img {
+  position: relative;
+  right: 43px;
+  width: 100%;
+}
 .main-container .sixth {
   width: 730px;
-  margin: 0 auto 0;
+  margin: 100px auto 0;
 }
 .main-container .sixth h3 {
   width: 770px;
+  margin-bottom: 18px;
   font-size: 24px;
 }
 .main-container .sixth h3 span {

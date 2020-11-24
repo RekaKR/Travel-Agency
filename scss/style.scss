@@ -24,18 +24,6 @@ body {
     font-size: modules.$h1-font-size;
   }
 
-  .overwhelming-q,
-  .bts-answer,
-  .p-cont,
-   {
-    width: 700px;
-    margin: 0 auto 0;
-
-    h1 {
-      width: 350px;
-    }
-  }
-
   p {
     color: modules.$p-color;
     padding-bottom: 60px;
@@ -43,6 +31,22 @@ body {
     font-weight: modules.$p-font-weight;
     font-size: modules.$p-font-size;
     line-height: modules.$p-line-height;
+  }
+
+  .overwhelming-q,
+  .bts-answer,
+  .p-cont {
+    width: 740px;
+    margin: 0 auto 0;
+
+    h1 {
+      width: 350px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      margin-left: 8px;
+    }
   }
 
   .top-pic-text,
@@ -54,12 +58,22 @@ body {
     font-size: modules.$pic-text-font-size;
   }
 
+  .fifth {
+
+    img {
+      position: relative;
+      right: 43px;
+      width: 100%;
+    }
+  }
+
   .sixth {
     width: 730px;
-    margin: 0 auto 0;
+    margin: 100px auto 0;
 
     h3 {
       width: 770px;
+      margin-bottom: 18px;
       font-size: modules.$h3-font-size;
   
       span {
