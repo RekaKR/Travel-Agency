@@ -33,6 +33,19 @@ body {
     letter-spacing: -0.35px;
   }
 
+  .pic-text,
+  .pic-text {
+    width: 100%;
+    color: modules.$pic-text-color;
+    margin: none;
+    padding: 20px 36px 78px;
+    font-size: modules.$pic-text-font-size;
+  }
+  
+  .pic-text {
+    padding: 20px 36px 29px;
+  }
+
   .overwhelming-q,
   .bts-answer {
     width: 700px;
@@ -61,15 +74,6 @@ body {
   
   .fourth { 
     margin-bottom: 100px;
-  }
-
-  .top-pic-text,
-  .bottom-pic-text {
-    width: 100%;
-    color: modules.$pic-text-color;
-    margin: none;
-    padding: none;
-    font-size: modules.$pic-text-font-size;
   }
 
   .fifth {
