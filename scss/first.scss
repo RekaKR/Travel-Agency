@@ -1,6 +1,27 @@
+.hero_background {
+  background-image: url('../images/backgroundmain-100.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1062px;
+  width: 1281px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-logo {
+  height: 30px;
+  width: 30px;
+}
+
 .hamburger {
-  width: 1.5rem;
-  height: 1.5rem;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
   background-color: aqua;
   display: flex;
   align-items: center;
@@ -11,10 +32,39 @@
   &_item {
     background: #222;
     display: block;
-    height: 2px;
-    width: 1.5rem;
-    display: block;
-  
+    height: 2.1px;
+    width: 16.1px;
+  }
+
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  .badge {
+  height: 150px;
+  width: 150px;
+  margin-top: 200px;
+  }
+
+  .header_container {
+    width: 284px;
+    height: 43px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .main_h3 {
+    
+    }
+  }
+
+  .programs {
+    width: 290px;
+    height: 50px;
+  }
 
 }
