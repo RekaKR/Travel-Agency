@@ -10,10 +10,37 @@ body {
   background-color: modules.$background-color;
 }
 
-main {
-  margin-left: auto;
-  margin-right: auto;
+.main-container {
   width: 100%;
   max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    color: modules.$h-color;
+    font-family: modules.$h-font-family;
+    font-weight: modules.$h1-font-weight;
+    font-size: modules.$h1-font-size;
+  }
+
+  h3 {
+    color: modules.$h-color;
+    font-family: modules.$h-font-family;
+    font-weight: modules.$h3-font-weight;
+    font-size: modules.$h1-font-size;
+  }
+
+  p {
+    color: modules.$p-color;
+    font-family: modules.$p-font-family;
+    font-weight: modules.$p-font-weight;
+    font-size: modules.$p-font-size;
+  }
+
+  .top-pic-text,
+  .bottom-pic-text {
+    color: modules.$pic-text-color;
+    font-size: modules.$pic-text-font-size;
+  }
 }
 

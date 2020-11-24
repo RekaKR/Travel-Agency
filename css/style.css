@@ -1,25 +1,33 @@
 /*
-$h-font-family: 'Montserrat', sans-serif;
-$h-font-weight: 900;
-$h-font-size: 48pt;
-*/
-/*63.751067px*/
-/*
-$p-font-family: 'Open Sans', sans-serif;;
-$p-font-weight: 300;
-$p-font-size: 18pt;
-*/
-/*23.90665px*/
-/*
-$pic-text-font-size: 16pt;
-*/
-/*21.250356px*/
-/*
-$h-line-height: 54.2082pt;
-$h-letter-space: -40;
+$h1-line-height: 54.2082pt;
+$h1-letter-space: -40;
 $p-line-height: 35.2pt;
 $pic-text-line-height: 35.2pt;
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.container .top-pic {
+  height: 100%;
+  background-image: url(../images/water-and-houses.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .bottom-pic {
+  height: 100%;
+  background-image: url(../images/horses.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,11 +37,34 @@ body {
   background-color: #2f3e49;
 }
 
-main {
-  margin-left: auto;
-  margin-right: auto;
+.main-container {
   width: 100%;
   max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container h1 {
+  color: #f96400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+.main-container h3 {
+  color: #f96400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+}
+.main-container p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.main-container .top-pic-text,
+.main-container .bottom-pic-text {
+  color: #909090;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
