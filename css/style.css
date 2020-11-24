@@ -1,3 +1,64 @@
+.hero_background {
+  background-image: url("../images/backgroundmain-100.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1062px;
+  width: 1281px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.hamburger {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.hamburger_item {
+  background: #222;
+  display: block;
+  height: 2.1px;
+  width: 16.1px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .badge {
+  height: 150px;
+  width: 150px;
+  margin-top: 200px;
+}
+.hero .header_container {
+  width: 284px;
+  height: 43px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .programs {
+  width: 290px;
+  height: 50px;
+}
+
 /*
 $h1-line-height: 54.2082pt;
 
@@ -19,8 +80,7 @@ body {
   margin-right: auto;
   background-color: #2f3e49;
 }
-.main-container h1,
-.main-container h3 {
+.main-container h1 {
   color: #f96400;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -28,7 +88,6 @@ body {
 }
 .main-container p {
   color: white;
-  padding-bottom: 35px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -49,6 +108,7 @@ body {
 .main-container .overwhelming-q p,
 .main-container .bts-answer p {
   margin-left: 1.7px;
+  padding-bottom: 35px;
 }
 .main-container .overwhelming-q p span,
 .main-container .bts-answer p span {
@@ -77,16 +137,27 @@ body {
   width: 100%;
 }
 .main-container .sixth {
-  width: 730px;
+  width: 700px;
   margin: 100px auto 0;
 }
 .main-container .sixth h3 {
   width: 770px;
+  color: #ff5100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   margin-bottom: 18px;
   font-size: 24px;
 }
 .main-container .sixth h3 span {
   font-weight: 500;
+}
+.main-container .sixth p {
+  margin-left: 1.7px;
+  padding-bottom: 46px;
+}
+.main-container .sixth p span {
+  margin-left: 1.3px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

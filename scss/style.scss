@@ -17,8 +17,7 @@ body {
   margin-right: auto;
   background-color: modules.$background-color;
 
-  h1,
-  h3 {
+  h1 {
     color: modules.$h-color;
     font-family: modules.$h-font-family;
     font-weight: modules.$h1-font-weight;
@@ -27,7 +26,6 @@ body {
 
   p {
     color: modules.$p-color;
-    padding-bottom: 35px;
     font-family: modules.$p-font-family;
     font-weight: modules.$p-font-weight;
     font-size: modules.$p-font-size;
@@ -48,6 +46,8 @@ body {
 
     p {
       margin-left: 1.7px;
+      padding-bottom: 35px;
+
       span {
         margin-left: 1.3px;
         display: inline-block;
@@ -81,16 +81,29 @@ body {
   }
 
   .sixth {
-    width: 730px;
+    width: 700px;
     margin: 100px auto 0;
 
     h3 {
       width: 770px;
+      color: modules.$h3-color;
+      font-family: modules.$h-font-family;
+      font-weight: modules.$h1-font-weight;
       margin-bottom: 18px;
       font-size: modules.$h3-font-size;
-  
+
       span {
-        font-weight: modules.$span-font-weight;
+          font-weight: modules.$span-font-weight;
+      }
+    }
+
+    p {
+      margin-left: 1.7px;
+      padding-bottom: 46px;
+
+      span {
+        margin-left: 1.3px;
+        display: inline-block;
       }
     }
   }
