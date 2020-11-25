@@ -1,3 +1,44 @@
+@use "color";
+@use "basic";
+
+.navbar {
+  width: 100%;
+  /*padding: 23px 26px 26px;*/
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+
+  .small-logo {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    top: 23px;
+    left: 26px;
+  }
+                
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    background-color: color.$top-pic-color;
+    padding: 6.2px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: 23.7px;
+    right: 27px;
+  
+    &_item {
+      width: 16.1px;
+      height: 2.1px;
+      background: #222;
+      display: block;
+    }
+  }
+}
+
 .hero {
   width: 100%;
   display: flex;
@@ -24,58 +65,39 @@
     margin: 10px;
 
     .badge {
+      width: 274px;
+      height: 274px;
+      box-sizing: content-box;
       padding-top: 175px;
     }
 
     .header_container {
-      width: 284px;
       height: 43px;
       margin: 55px 0;
-      background-color: aquamarine;
+      padding: 24.5px 25px;
+      background-color: color.$top-pic-color;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      .main_h3 {
+        color: color.$background-color;
+        font-family: basic.$h-font-family;
+        font-weight: basic.$h1-font-weight;
+        font-size: basic.$h3-font-size;
+      }
     }
 
     .programs {
       width: 290px;
-      height: 50px;
     }
   }
 
   .hero_h1 {
-    align-items: left;
-    width: 800px;
+    max-width: 847px;
+    margin-top: 86px;
+    margin-left: 57px;
+    letter-spacing: basic.$h1-letter-space;
+    line-height: 54.2082px;
   } 
-}
-
-.navbar {
-  width: 100%;
-  /*padding: 23px 26px 26px;*/
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-
-  .small-logo {
-    width: 30px;
-    height: 30px;
-  }
-                
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(0, 255, 255);
-    padding: 0.5em;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 50%;
-  
-    &_item {
-      width: 16.1px;
-      height: 2.1px;
-      background: #222;
-      display: block;
-    }
-  }
 }

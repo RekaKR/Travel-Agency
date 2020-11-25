@@ -1,3 +1,38 @@
+.navbar {
+  width: 100%;
+  /*padding: 23px 26px 26px;*/
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .small-logo {
+  width: 70px;
+  height: 30px;
+  position: relative;
+  top: 23px;
+  left: 26px;
+}
+.navbar .hamburger {
+  width: 30px;
+  height: 30px;
+  background-color: #73c8de;
+  padding: 6.2px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  top: 23.7px;
+  right: 27px;
+}
+.navbar .hamburger_item {
+  width: 16.1px;
+  height: 2.1px;
+  background: #222;
+  display: block;
+}
+
 .hero {
   width: 100%;
   display: flex;
@@ -23,52 +58,35 @@
   margin: 10px;
 }
 .hero_content .badge {
+  width: 274px;
+  height: 274px;
+  box-sizing: content-box;
   padding-top: 175px;
 }
 .hero_content .header_container {
-  width: 284px;
   height: 43px;
   margin: 55px 0;
-  background-color: aquamarine;
+  padding: 24.5px 25px;
+  background-color: #73c8de;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.hero_content .header_container .main_h3 {
+  color: #2f3e49;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
 .hero_content .programs {
   width: 290px;
-  height: 50px;
 }
 .hero .hero_h1 {
-  align-items: left;
-  width: 800px;
-}
-
-.navbar {
-  width: 100%;
-  /*padding: 23px 26px 26px;*/
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar .small-logo {
-  width: 30px;
-  height: 30px;
-}
-.navbar .hamburger {
-  width: 30px;
-  height: 30px;
-  background-color: aqua;
-  padding: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 50%;
-}
-.navbar .hamburger_item {
-  width: 16.1px;
-  height: 2.1px;
-  background: #222;
-  display: block;
+  max-width: 847px;
+  margin-top: 86px;
+  margin-left: 57px;
+  letter-spacing: -2px;
+  line-height: 54.2082px;
 }
 
 * {
@@ -120,7 +138,7 @@ body {
 }
 .main-container .pic-container {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
 }
@@ -291,6 +309,9 @@ body {
   .main-container .sixth p span {
     display: inline;
   }
+}
+.main-container .sixth .bigger-space-p {
+  padding-bottom: 69px;
 }
 
 /*# sourceMappingURL=style.css.map */
