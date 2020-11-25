@@ -64,11 +64,49 @@
     flex-direction: column;
     margin: 10px;
 
+    @media (max-width: 860px) {
+      margin: 10px * 0.75;
+    }
+
+    @media (max-width: 630px) {
+      margin: 10px * 0.5;
+    }
+
     .badge {
       width: 274px;
       height: 274px;
       box-sizing: content-box;
       padding-top: 175px;
+
+      @media (max-width: 860px) {
+        width: 274px * 0.75;
+        height: 274px * 0.75;
+        padding-top: 175px * 0.75;
+      }
+
+      @media (max-width: 650px) {
+        width: 274px * 0.5;
+        height: 274px * 0.5;
+        padding-top: 175px * 0.5;
+      }
+
+      @media (max-width: 440px) {
+        width: 274px * 0.45;
+        height: 274px * 0.45;
+        padding-top: 175px * 0.3;
+      }
+
+      @media (max-width: 440px) {
+        width: 274px * 0.45;
+        height: 274px * 0.45;
+        padding-top: 175px * 0.35;
+      }
+
+      @media (max-width: 390px) {
+        width: 274px * 0.45;
+        height: 274px * 0.45;
+        padding-top: 175px * 0.15;
+      }
     }
 
     .header_container {
@@ -80,16 +118,56 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: 860px) {
+        margin: (55px * 0.75) 0;
+        padding: (24.5px * 0.75) (25px * 0.75);
+      }
+
+      @media (max-width: 500px) {
+        margin: (55px * 0.5) 0;
+        padding: (24.5px * 0.5) (25px * 0.5);
+      }
+
+      @media (max-width: 340px) {
+        margin: (55px * 0.45) 0;
+        padding: 0 (25px * 0.45);
+      }
+
       .main_h3 {
         color: color.$background-color;
         font-family: basic.$h-font-family;
         font-weight: basic.$h1-font-weight;
         font-size: basic.$h3-font-size;
+
+              
+        @media (max-width: 860px) {
+          font-size: basic.$h3-font-size * 0.75;
+        }
+  
+        @media (max-width: 500px) {
+          font-size: basic.$h3-font-size * 0.5;
+        }  
+
+        @media (max-width: 500px) {
+          font-size: basic.$h3-font-size * 0.45;
+        }
       }
     }
 
     .programs {
       width: 290px;
+
+      @media (max-width: 860px) {
+        width: 290px * 0.75;
+      }
+
+      @media (max-width: 500px) {
+        width: 290px * 0.5;
+      }
+
+      @media (max-width: 340px) {
+        width: 290px * 0.45;
+      }
     }
   }
 
@@ -99,5 +177,19 @@
     margin-left: 57px;
     letter-spacing: basic.$h1-letter-space;
     line-height: 54.2082px;
+
+    
+    @media (max-width: 940px) {
+      width: 80%;
+      margin: (86px * 0.75) (57px * 0.75) 0;
+    }
+
+    
+    @media (max-width: 500px) {
+      width: 80%;
+      margin: (86px * 0.5) auto 0;
+      font-size: basic.$h1-font-size * 0.5;
+      line-height: basic.$p-line-height * 0.75;
+    }
   } 
 }
