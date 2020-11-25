@@ -16,6 +16,16 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
+  background-image: url("../images/glacier.svg"), url("../images/gradient.png"), url("../images/bg_img.jpg");
+  background-size: 133px, 100%, 100%;
+  background-repeat: no-repeat;
+  background-position-y: 745px, 300px, 0;
+  background-position-x: calc(((((100% + 133px) - 847px) / 2) - 133px) - 5px), 0, 0;
+
+  @media (max-width: 860px) {
+    // background-image: none;
+  }
 }
 
 .main-container {
@@ -138,10 +148,19 @@ body {
   }
   
   .fourth { 
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    background-image: url("../images/wave1.svg"), url("../images/wave2.svg"), url("../images/car.svg");
+    background-size: 277px, 205px, 89px;
+    background-repeat: no-repeat;
+    background-position-y: 245px, 421px, calc(100% - 70px);
+    background-position-x: calc(((((100% + 277px) - 700px) / 2) - 277px) - 25px), calc(((((100% + 205px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 89px) - 700px) / 2) - 89px) - 65px);
+
+    @media (max-width: 860px) {
+      background-image: none;
+    }  
 
     @media (max-width: 600px) {
-      margin-bottom: 100px * 0.5;
+      padding-bottom: 100px * 0.5;
     }
   }
 
@@ -162,12 +181,24 @@ body {
   }
 
   .sixth {
-    width: 700px;
-    margin: 100px auto 0;
+    background-image: url("../images/geyser.svg"), url("../images/birds.svg"), url("../images/lava.svg");
+    background-size: 158px, 169px, 267px;
+    background-repeat: no-repeat;
+    background-position-y: 245px, 421px, calc(100% - 70px);
+    background-position-x: calc(((((100% + 158px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 169px) - 700px) / 2) - 169px) - 25px), calc(((((100% + 267px) - 700px) / 2) + 700px) + 25px);
 
     @media (max-width: 860px) {
-      width: 80%;
-      margin: (100px * 0.5) auto 0;
+      background-image: none;
+    }
+
+    .days {
+      width: 700px;
+      margin: 100px auto 0;
+
+      @media (max-width: 860px) {
+        width: 80%;
+        margin: (100px * 0.5) auto 0;
+      }  
     }
 
     h3 {
