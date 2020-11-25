@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,14 @@ body {
     font-family: modules.$h-font-family;
     font-weight: modules.$h1-font-weight;
     font-size: modules.$h1-font-size;
+
+    @media (max-width: 500px) {
+      font-size: modules.$h1-font-size * 0.75;
+    }
+
+    @media (max-width: 350px) {
+      font-size: modules.$h1-font-size * 0.5;
+    }
   }
 
   p {
@@ -30,7 +39,7 @@ body {
     font-weight: modules.$p-font-weight;
     font-size: modules.$p-font-size;
     line-height: modules.$p-line-height;
-    letter-spacing: -0.35px;
+    letter-spacing: -0.35px;  
   }
   
   .pic-container {
@@ -53,10 +62,20 @@ body {
     margin: none;
     padding: 20px 36px 78px;
     font-size: modules.$pic-text-font-size;
+
+    @media (max-width: 500px) {
+      font-size: modules.$p-font-size * 0.75;
+      line-height: modules.$p-line-height * 0.5;
+      padding: (20px * 0.5) (36px * 0.5) (78px * 0.5);
+    }
   }
   
   .pic-text2 {
     padding: 20px 36px 29px;
+
+    @media (max-width: 500px) {
+      padding: (20px * 0.5) (36px * 0.5) (29px * 0.5);
+    }
   }
 
   .overwhelming-q,
@@ -64,33 +83,69 @@ body {
     width: 700px;
     margin: 0 auto 0;
 
+    @media (max-width: 860px) {
+      width: 80%;
+        
+      .br {
+        display: none;
+      }
+    }
+
     h1 {
       width: 350px;
       margin: 37px 0 35px -5px;
       letter-spacing: modules.$h1-letter-space;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        margin: (37px * 0.5) 0 (35px * 0.5) (-5px * 0.5);
+      }
     }
 
     p {
       margin-left: 1.7px;
       padding-bottom: 35px;
 
+      @media (max-width: 500px) {
+        font-size: modules.$p-font-size * 0.75;
+        line-height: modules.$p-line-height * 0.75;
+        padding-bottom: (35px * 0.5);        
+      }
+
       span {
         margin-left: 1.3px;
         display: inline-block;
+
+        @media (max-width: 860px) {
+          display: inline;
+        }
       }
     }
 
     .bigger-p {
       padding-bottom: 70px;
+
+      @media (max-width: 500px) {
+        padding-bottom: 70px * 0.5;
+      }
     }
   }
   
   .fourth { 
     margin-bottom: 100px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 100px * 0.5;
+    }
   }
 
   .fifth {
     margin: 0 84px 0 9px;
+
+    /*
+    @media (max-width: 500px) {
+      margin-bottom: 0 (84px * 0.5) 0 (9px * 0.5);
+    } */
 
     img {
       width: 100%;
@@ -101,16 +156,27 @@ body {
     width: 700px;
     margin: 100px auto 0;
 
+    @media (max-width: 860px) {
+      width: 80%;
+      margin: (100px * 0.5) auto 0;
+    }
+
     h3 {
       width: 770px;
       color: modules.$h3-color;
+      margin-bottom: 18px;
       font-family: modules.$h-font-family;
       font-weight: modules.$h1-font-weight;
-      margin-bottom: 18px;
       font-size: modules.$h3-font-size;
 
+      @media (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 18px * 0.5;
+        font-size: modules.$h3-font-size * 0.75;
+      }
+
       span {
-          font-weight: modules.$span-font-weight;
+        font-weight: modules.$span-font-weight;
       }
     }
 
@@ -118,9 +184,20 @@ body {
       margin-left: 1.7px;
       padding-bottom: 46px;
 
+      @media (max-width: 500px) {
+        margin-left: (1.7px * 0.5);
+        padding-bottom: (46px * 0.5);
+        font-size: modules.$p-font-size * 0.75;
+        line-height: modules.$p-line-height * 0.75;
+      }
+
       span {
         margin-left: 1.3px;
         display: inline-block;
+
+        @media (max-width: 860px) {
+          display: inline;
+        }
       }
     }
   }

@@ -67,6 +67,7 @@ $pic-text-line-height: 35.2pt;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -85,6 +86,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
+}
+@media (max-width: 500px) {
+  .main-container h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 350px) {
+  .main-container h1 {
+    font-size: 24px;
+  }
 }
 .main-container p {
   color: white;
@@ -113,13 +124,36 @@ body {
   padding: 20px 36px 78px;
   font-size: 16px;
 }
+@media (max-width: 500px) {
+  .main-container .pic-text,
+.main-container .pic-text2 {
+    font-size: 13.5px;
+    line-height: 17.6px;
+    padding: 10px 18px 39px;
+  }
+}
 .main-container .pic-text2 {
   padding: 20px 36px 29px;
+}
+@media (max-width: 500px) {
+  .main-container .pic-text2 {
+    padding: 10px 18px 14.5px;
+  }
 }
 .main-container .overwhelming-q,
 .main-container .bts-answer {
   width: 700px;
   margin: 0 auto 0;
+}
+@media (max-width: 860px) {
+  .main-container .overwhelming-q,
+.main-container .bts-answer {
+    width: 80%;
+  }
+  .main-container .overwhelming-q .br,
+.main-container .bts-answer .br {
+    display: none;
+  }
 }
 .main-container .overwhelming-q h1,
 .main-container .bts-answer h1 {
@@ -127,25 +161,61 @@ body {
   margin: 37px 0 35px -5px;
   letter-spacing: -2px;
 }
+@media (max-width: 500px) {
+  .main-container .overwhelming-q h1,
+.main-container .bts-answer h1 {
+    width: 100%;
+    margin: 18.5px 0 17.5px -2.5px;
+  }
+}
 .main-container .overwhelming-q p,
 .main-container .bts-answer p {
   margin-left: 1.7px;
   padding-bottom: 35px;
+}
+@media (max-width: 500px) {
+  .main-container .overwhelming-q p,
+.main-container .bts-answer p {
+    font-size: 13.5px;
+    line-height: 26.4px;
+    padding-bottom: 17.5px;
+  }
 }
 .main-container .overwhelming-q p span,
 .main-container .bts-answer p span {
   margin-left: 1.3px;
   display: inline-block;
 }
+@media (max-width: 860px) {
+  .main-container .overwhelming-q p span,
+.main-container .bts-answer p span {
+    display: inline;
+  }
+}
 .main-container .overwhelming-q .bigger-p,
 .main-container .bts-answer .bigger-p {
   padding-bottom: 70px;
 }
+@media (max-width: 500px) {
+  .main-container .overwhelming-q .bigger-p,
+.main-container .bts-answer .bigger-p {
+    padding-bottom: 35px;
+  }
+}
 .main-container .fourth {
   margin-bottom: 100px;
 }
+@media (max-width: 500px) {
+  .main-container .fourth {
+    margin-bottom: 50px;
+  }
+}
 .main-container .fifth {
   margin: 0 84px 0 9px;
+  /*
+  @media (max-width: 500px) {
+    margin-bottom: 0 (84px * 0.5) 0 (9px * 0.5);
+  } */
 }
 .main-container .fifth img {
   width: 100%;
@@ -154,13 +224,26 @@ body {
   width: 700px;
   margin: 100px auto 0;
 }
+@media (max-width: 860px) {
+  .main-container .sixth {
+    width: 80%;
+    margin: 50px auto 0;
+  }
+}
 .main-container .sixth h3 {
   width: 770px;
   color: #ff5100;
+  margin-bottom: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  margin-bottom: 18px;
   font-size: 24px;
+}
+@media (max-width: 500px) {
+  .main-container .sixth h3 {
+    width: 100%;
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
 }
 .main-container .sixth h3 span {
   font-weight: 500;
@@ -169,9 +252,22 @@ body {
   margin-left: 1.7px;
   padding-bottom: 46px;
 }
+@media (max-width: 500px) {
+  .main-container .sixth p {
+    margin-left: 0.85px;
+    padding-bottom: 23px;
+    font-size: 13.5px;
+    line-height: 26.4px;
+  }
+}
 .main-container .sixth p span {
   margin-left: 1.3px;
   display: inline-block;
+}
+@media (max-width: 860px) {
+  .main-container .sixth p span {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
