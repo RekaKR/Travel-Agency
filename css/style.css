@@ -96,20 +96,24 @@ body {
 }
 .main-container .pic-container {
   width: 100%;
-  height: auto;
   margin-top: 55px;
   display: flex;
   justify-content: center;
 }
+.main-container .pic-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 .main-container .pic-text,
-.main-container .pic-text {
+.main-container .pic-text2 {
   width: 100%;
   color: #909090;
   margin: none;
   padding: 20px 36px 78px;
   font-size: 16px;
 }
-.main-container .pic-text {
+.main-container .pic-text2 {
   padding: 20px 36px 29px;
 }
 .main-container .overwhelming-q,

@@ -35,14 +35,19 @@ body {
   
   .pic-container {
     width: 100%;
-    height: auto;
     margin-top: 55px;
     display: flex;
     justify-content: center;
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
   }
 
   .pic-text,
-  .pic-text {
+  .pic-text2 {
     width: 100%;
     color: modules.$pic-text-color;
     margin: none;
@@ -50,7 +55,7 @@ body {
     font-size: modules.$pic-text-font-size;
   }
   
-  .pic-text {
+  .pic-text2 {
     padding: 20px 36px 29px;
   }
 
