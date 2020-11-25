@@ -1,24 +1,23 @@
-.hero_background {
-  background-image: url('../images/backgroundmain-100.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 1062px;
-  width: 1281px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
+  box-sizing: border-box;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-}
-
-.small-logo {
-  height: 30px;
-  width: 30px;
-}
-
-.hamburger {
+  padding: 23px 26px 26px;
+  position: fixed;
+  top: 0;
+  
+  .small-logo {
+    height: 30px;
+    width: 30px;
+  }
+                
+  .hamburger {
   box-sizing: border-box;
   width: 30px;
   height: 30px;
@@ -27,44 +26,74 @@
   align-items: center;
   border-radius: 50%;
   flex-wrap: wrap;
-  padding: 0.5rem;
-
-  &_item {
-    background: #222;
-    display: block;
-    height: 2.1px;
-    width: 16.1px;
+  padding: 0.5em;
+  
+    &_item {
+      background: #222;
+      display: block;
+      height: 2.1px;
+      width: 16.1px;
+    }
   }
-
 }
 
 .hero {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-  .badge {
-  height: 150px;
-  width: 150px;
-  margin-top: 200px;
+  width: 100vw;
+  height: 46vw;
+
+  .bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 1062px;
+/*    max-width: 1281px; 
+*/    display: block;
+    margin: 0 auto;
   }
 
-  .header_container {
-    width: 284px;
-    height: 43px;
-    background-color: aquamarine;
+  &_content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
     
-    .main_h3 {
+    .badge {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    }
+
+    .header_container {
+      width: 284px;
+      height: 43px;
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
     
+      .main_h3 {
+        
+      }
+    }
+
+    .programs {
+      width: 290px;
+      height: 50px;
     }
   }
 
-  .programs {
-    width: 290px;
-    height: 50px;
-  }
-
+  .hero_h1 {
+    align-items: left;
+    width: 800px;
+  } 
 }
