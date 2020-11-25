@@ -134,7 +134,7 @@ body {
   .fourth { 
     margin-bottom: 100px;
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       margin-bottom: 100px * 0.5;
     }
   }
@@ -142,10 +142,13 @@ body {
   .fifth {
     margin: 0 84px 0 9px;
 
-    /*
+    @media (max-width: 860px) {
+      margin: 0 15px;
+    }
+
     @media (max-width: 500px) {
-      margin-bottom: 0 (84px * 0.5) 0 (9px * 0.5);
-    } */
+      margin: 0 (15px * 0.5);
+    }
 
     img {
       width: 100%;
@@ -169,8 +172,11 @@ body {
       font-weight: modules.$h1-font-weight;
       font-size: modules.$h3-font-size;
 
-      @media (max-width: 500px) {
+      @media (max-width: 860px) {
         width: 100%;
+      }
+
+      @media (max-width: 500px) {
         margin-bottom: 18px * 0.5;
         font-size: modules.$h3-font-size * 0.75;
       }
