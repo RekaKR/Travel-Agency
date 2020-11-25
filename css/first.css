@@ -1,23 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
+  width: 100%;
+  padding: 23px 26px 26px;
   box-sizing: border-box;
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  padding: 23px 26px 26px;
-  position: fixed;
-  top: 0;
 }
 .navbar .small-logo {
-  height: 30px;
   width: 30px;
+  height: 30px;
 }
 .navbar .hamburger {
-  box-sizing: border-box;
   width: 30px;
   height: 30px;
   background-color: aqua;
@@ -28,14 +20,13 @@ body {
   padding: 0.5em;
 }
 .navbar .hamburger_item {
+  width: 16.1px;
+  height: 2.1px;
   background: #222;
   display: block;
-  height: 2.1px;
-  width: 16.1px;
 }
 
 .hero {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +35,6 @@ body {
   height: 46vw;
 }
 .hero .bg_img {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -86,4 +76,4 @@ body {
   width: 800px;
 }
 
-/*# sourceMappingURL=fist.css.map */
+/*# sourceMappingURL=first.css.map */
