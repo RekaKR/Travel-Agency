@@ -24,12 +24,21 @@ body {
   background-position-y: 718px, 300px, 0;
   background-position-x: calc(((((100% + 133px) - 843px) / 2) - 133px) + 55px), 0, 0;
 
-  @media (max-width: 860px) {
-    // background-image: none;
+  @media (max-width: 970px) {
+    background-image: none, url("../images/gradient.png"), url("../images/bg_img.jpg");
+    background-position-y: 718px, 150px, 0;
   }
 
   @media (max-width: 500px) {
-    padding: 32px * 0.5;
+    background-image: none, url("../images/gradient.png"), url("../images/bg_img.jpg");
+    background-position-y: 718px, 150px, 0;
+    padding-bottom: 32px * 0.75;
+  }
+
+  @media (max-width: 400px) {
+    background-image: none, url("../images/gradient.png"), url("../images/bg_img.jpg");
+    background-position-y: 718px, 100px, 0;
+    padding-bottom: 32px * 0.75;
   }
 }
 
@@ -195,14 +204,14 @@ body {
     background-size: 158px, 169px, 267px;
     background-repeat: no-repeat;
     background-position-y: 230px, 699px, calc(100% - 25px);
-    background-position-x: calc(((((100% + 158px) - 700px) / 2) + 700px) + 45px), calc(((((100% + 169px) - 700px) / 2) - 191.5px) - 25px), calc(((((100% + 267px) - 700px) / 2) + 700px) + 22px);
+    background-position-x: calc(((((100% + 158px) - 700px) / 2) + 700px) + 45px), calc(((((100% + 169px) - 700px) / 2) - 191.5px) - 25px), calc(((((100% + 267px) - 700px) / 2) + 700px) + 24px);
 
     @media (max-width: 860px) {
       background-image: none;
     }
 
     @media (max-width: 500px) {
-      padding: 32px * 0.5;
+      padding-bottom: 32px * 0.5;
     }
 
     .days {
@@ -243,7 +252,7 @@ body {
 
       @media (max-width: 500px) {
         margin-left: (1.7px * 0.5);
-        padding-bottom: (46px * 0.5);
+        padding-bottom: 46px * 0.6;
         font-size: modules.$p-font-size * 0.75;
         line-height: modules.$p-line-height * 0.75;
       }
@@ -260,10 +269,18 @@ body {
 
     .bigger-space-p2 {
       padding-bottom: 80px;
+
+      @media (max-width: 500px) {
+        padding-bottom: 46px * 0.6;
+      }
     }
     
     .bigger-space-p {
       padding-bottom: 69px;
+
+      @media (max-width: 500px) {
+        padding-bottom: 46px * 0.6;
+      }
     }
   }
 }
