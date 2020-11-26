@@ -20,20 +20,102 @@
     width: 30px;
     height: 30px;
     background-color: color.$top-pic-color;
-    padding: 6.2px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     position: relative;
     top: 23.7px;
     right: 27px;
   
+    .hamburger-label {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  
+      span {
+        margin: 1.5px 0;
+        padding: 1px;
+      }
+    }
+
+
     &_item {
       width: 16.1px;
       height: 2.1px;
       background: #222;
+      display: block;
+    }
+
+    .hamburger-checkbox {
+      display: none;
+    
+      &:checked + .list {
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+      }
+    }
+
+    .list {
+      width: 200px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0 auto;
+      padding: 0;
+      font-family: basic.$h-font-family;
+      font-weight: basic.$h1-font-weight;
+      font-size: basic.$p-font-size;
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @media (max-width: 750px) {
+        width: 200px * 0.75;
+        font-size: basic.$p-font-size * 0.75;
+      }
+
+      @media (max-width: 550px) {
+        width: 100vw;
+        font-size: basic.$p-font-size * 0.5;
+        position: absolute;
+        top: 12px;
+        right: -27px;
+      }
+    
+      .item-a {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      & .link {
+        color: color.$background-color;
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+        
+        @media (max-width: 550px) {
+          color: color.$h-color;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:hover {
+          color: color.$h-color;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 550px) {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+
+    .link {
       display: block;
     }
   }
@@ -45,18 +127,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -30px;
-
-  .bg_img {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  margin-top: -30px;
 
   &_content {
     display: flex;
