@@ -172,18 +172,17 @@
   }
 
   .hero_h1 {
-    max-width: 847px;
-    margin-top: 86px;
-    margin-left: 57px;
-    letter-spacing: basic.$h1-letter-space;
+    max-width: 843px;
+    margin-top: 56px;
+    margin-left: 133.5px;
+    letter-spacing: basic.$h1-letter-space * 1.1;
     line-height: 54.2082px;
-
+    word-spacing: 0.5px;
     
     @media (max-width: 940px) {
       width: 80%;
       margin: (86px * 0.75) (57px * 0.75) 0;
     }
-
     
     @media (max-width: 500px) {
       width: 80%;

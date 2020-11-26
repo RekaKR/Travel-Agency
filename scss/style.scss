@@ -16,15 +16,20 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 32px;
 
   background-image: url("../images/glacier.svg"), url("../images/gradient.png"), url("../images/bg_img.jpg");
   background-size: 133px, 100%, 100%;
   background-repeat: no-repeat;
-  background-position-y: 745px, 300px, 0;
-  background-position-x: calc(((((100% + 133px) - 847px) / 2) - 133px) - 5px), 0, 0;
+  background-position-y: 718px, 300px, 0;
+  background-position-x: calc(((((100% + 133px) - 843px) / 2) - 133px) + 55px), 0, 0;
 
   @media (max-width: 860px) {
     // background-image: none;
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px * 0.5;
   }
 }
 
@@ -60,7 +65,6 @@ body {
   
   .pic-container {
     width: 100%;
-    margin-top: 32px;
     display: flex;
     justify-content: center;
 
@@ -152,10 +156,14 @@ body {
     background-image: url("../images/wave1.svg"), url("../images/wave2.svg"), url("../images/car.svg");
     background-size: 277px, 205px, 89px;
     background-repeat: no-repeat;
-    background-position-y: 245px, 421px, calc(100% - 70px);
-    background-position-x: calc(((((100% + 277px) - 700px) / 2) - 277px) - 25px), calc(((((100% + 205px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 89px) - 700px) / 2) - 89px) - 65px);
+    background-position-y: 245px, 421px, calc(100% - 69px);
+    background-position-x: calc(((((100% + 277px) - 700px) / 2) - 277px) - 25px), calc(((((100% + 205px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 89px) - 700px) / 2) - 89px) - 66px);
 
-    @media (max-width: 860px) {
+    @media (max-width: 1050px) {
+      background-position-x: calc(((((100% + 277px) - 700px) / 2) - 277px) - 25px), calc(((((100% + 205px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 89px) - 700px) / 2) - 89px) - 0px);
+    }
+
+    @media (max-width: 890px) {
       background-image: none;
     }  
 
@@ -181,14 +189,20 @@ body {
   }
 
   .sixth {
+    padding-bottom: 32px;
+
     background-image: url("../images/geyser.svg"), url("../images/birds.svg"), url("../images/lava.svg");
     background-size: 158px, 169px, 267px;
     background-repeat: no-repeat;
-    background-position-y: 245px, 421px, calc(100% - 70px);
-    background-position-x: calc(((((100% + 158px) - 700px) / 2) + 700px) + 25px), calc(((((100% + 169px) - 700px) / 2) - 169px) - 25px), calc(((((100% + 267px) - 700px) / 2) + 700px) + 25px);
+    background-position-y: 230px, 699px, calc(100% - 25px);
+    background-position-x: calc(((((100% + 158px) - 700px) / 2) + 700px) + 45px), calc(((((100% + 169px) - 700px) / 2) - 191.5px) - 25px), calc(((((100% + 267px) - 700px) / 2) + 700px) + 22px);
 
     @media (max-width: 860px) {
       background-image: none;
+    }
+
+    @media (max-width: 500px) {
+      padding: 32px * 0.5;
     }
 
     .days {
@@ -204,7 +218,7 @@ body {
     h3 {
       width: 770px;
       color: modules.$h3-color;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
       font-family: modules.$h-font-family;
       font-weight: modules.$h1-font-weight;
       font-size: modules.$h3-font-size;
@@ -243,6 +257,11 @@ body {
         }
       }
     }
+
+    .bigger-space-p2 {
+      padding-bottom: 80px;
+    }
+    
     .bigger-space-p {
       padding-bottom: 69px;
     }
